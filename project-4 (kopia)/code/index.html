@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css">
+    <title>Project 4: Pizzabot</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="hero">
+            <h1>This is Linda & Linda's fantastic Pizza Bot</h1>
+            <img src="robot.jpg" alt="pizzabot" class="hero-image">
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- order form -->
+        <form name="orderForm">
+            <h2>Please select a pizza on our menu:</h2>
+
+            <!-- RADIO BUTTONS -->
+            <div class="radio-buttons">
+                <label>
+      
+<input type="radio" name="pizzaType" value="hawaiian" id="hawaiian" checked>
+<img src="hawaiian.jpeg" alt="hawaiian-image">
+<p>Hawaiian</p>
+        </label>
+                <label>
+        <input type="radio" name="pizzaType" value="pepperoni" id="pepperoni">
+        <img src="pepperoni.jpeg" alt="pepperoni-image">
+       <p>Pepperoni</p>
+            </label>
+                <label>
+       <input type="radio" name="pizzaType" value="vegetarian" id="vegetarian">
+       <img src="vegetarian.jpeg" alt="vegeterian-image">
+       <p>Vegetarian</p>
+        </label>
+            </div>
+            <!-- OPTION QUANTITY  -->
+            <label>
+                    <h2>How many pizzas do you want?</h2>
+                    <select name="pizzaQuantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select> 
+                </label>
+        </form>
+        <!-- BUTTON SUBMIT -->
+        <p>
+
+            <input type="submit" id="button" value="SUBMIT ORDER" onclick='printOrder(); return false'>
+        </p>
+
+        <div id="order-confirmation">
+            <p id="showMessage"></p>
+        </div>
+        <img src="pepperoni.jpeg" id="pepperoni-image" alt="pepperoni-image">
+        <img src="hawaiian.jpeg" id="hawaiian-image" alt="hawaiian-image">
+        <img src="vegetarian.jpeg" id="vegetarian-image" alt="vegeterian-image">
+
+    </div>
+
+    <footer>
+        <p>This is a school project for the Technigo Bootcamp 2019. <br> Questions? Email: <a href="">isell.linda@gmail.com<a href=""></a></p>
+        <br>
+        <img id="logo" src="technigo.png" alt="Technigo logo"></div>
+    </footer>
+
+    <script src="pizzabot.js"></script>
+</body>
+
+</html>
